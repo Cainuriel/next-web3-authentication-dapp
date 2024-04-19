@@ -29,21 +29,21 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         {/* Sure error log when a user is not connected to Alfajores network */}
-        {chainId && chainId != 44787 && (
+        {chainId && chainId != 97 && (
           <div className="absolute px-4 py-2 text-red-500 bg-red-100 border-2 border-red-500 rounded-md top-10">
-            <h1>Connect to Alfajores network only!</h1>
+            <h1>Connect to BSC network only!</h1>
           </div>
         )}
 
         <div className={styles.description}>
-          <p>Connect on Celo Alajores </p>
+          <p>Connect on BSC </p>
           <div>
             <a
-              href="https://celo.org/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
-              By <h1 className="text-2xl font-semibold">CELO</h1>
+              By <h1 className="text-2xl font-semibold">BSC</h1>
             </a>
           </div>
         </div>
@@ -55,21 +55,21 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href="https://docs.celo.org/"
+            href=""
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Celo Docs <span>-&gt;</span>
+              Polfex Docs <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Learn more about celo from the documentation
+              Learn more about POLFEX from the documentation
             </p>
           </a>
 
           <a
-            href="https://docs.celo.org/tutorials"
+            href=""
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -78,7 +78,7 @@ export default function Home() {
               Tutorials <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Get started with the Celo tutorials
+              Get started with any tutorials
             </p>
           </a>
 
@@ -106,7 +106,7 @@ export default function Home() {
               Connect <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Join the amazing Celo community on Discord
+              Join the amazing community on Discord
             </p>
           </a>
         </div>
