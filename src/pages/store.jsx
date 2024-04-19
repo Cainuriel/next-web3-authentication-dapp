@@ -29,15 +29,6 @@ const Store = () => {
 
       <div className="flex flex-row flex-wrap flex-1 gap-6">
         <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
       </div>
     </div>
   )

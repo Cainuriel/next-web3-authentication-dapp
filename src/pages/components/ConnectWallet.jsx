@@ -12,16 +12,18 @@ const ConnectWallet = ({ isConnected, setIsConnected }) => {
   const { activate, active, chainId } = useWeb3React(); // Add chainId
 
   const onClick = () => {
-    activate(injectedConnector);
+
+      activate(injectedConnector);
+      if (chainId !== 97) {
+        alert(`Please switch to the correct network bsc to use this application. ${chainId}`);
+      } 
+       
   };
 
   useEffect(() => {
     setIsConnected(active);
-
-    // Check if chainId is not 97
-    if (chainId !== 97) {
-      alert('Please switch to the correct network bsc to use this application.');
-    }
+        console.log("chainid ",chainId);
+    
   }, [active, chainId]); // Include chainId in dependencies
 
   return (
