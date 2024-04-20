@@ -15,8 +15,9 @@ function BuyNFT({ nftContractAddress, nftContractABI }) {
 
     try {
       setTransactionInProgress(true)
-      await nftContract.buy(tokenId, { value: ethers.utils.parseEther(price) })
-      setTransactionInProgress(false)
+      const response = await nftContract.safeMint()
+      setTransactionInProgress(false);
+      console.log("response ", response);
       alert('¡Compra exitosa!')
     } catch (error) {
       console.error('Error al comprar NFT:', error)

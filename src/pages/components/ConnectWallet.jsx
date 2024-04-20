@@ -14,9 +14,6 @@ const ConnectWallet = ({ isConnected, setIsConnected }) => {
   const onClick = () => {
 
       activate(injectedConnector);
-      if (chainId !== 97) {
-        alert(`Please switch to the correct network bsc to use this application. ${chainId}`);
-      } 
        
   };
 
